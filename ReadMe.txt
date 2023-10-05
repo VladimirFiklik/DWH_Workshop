@@ -1,3 +1,13 @@
+Data Festival DWH Workshop - cvičení
+
+Připojení k databázi
+  - Přes webové rozhraní na adrese https://gf8f5077a457360-datafestival.adb.eu-frankfurt-1.oraclecloudapps.com/
+  
+  - Přes lokálního Oracle clienta - viz Connection string na konci
+  
+ 
+
+
 1) Vytvořte si struktury tabulek primárních systémů       CRM_CLIENT a APPLICATION_PERSON a naplňte je daty
 
    - skript Tables\CRM_CLIENT.sql
@@ -47,3 +57,11 @@
                 -- počet klientů narozených v jednotlivých dekádách (např. 1990-1999, 2000-2009, ...)
 
    - Pokud budete potřebovat transformovat data pro report, můžete tak udělat buď v Power BI, nebo v SQL v databázi
+   
+   
+Připojení k databázi přes lokálního Oracle clienta:
+do tnsnames.ora zadat connection string:
+datafestival_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.eu-frankfurt-1.oraclecloud.com))(connect_data=(service_name=gf8f5077a457360_datafestival_low.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+
+   
