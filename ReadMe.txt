@@ -8,7 +8,7 @@ Připojení k databázi
  
 
 
-1) Vytvořte si struktury tabulek primárních systémů       CRM_CLIENT a APPLICATION_PERSON a naplňte je daty
+1) Vytvořte si struktury tabulek primárních systémů CRM_CLIENT a APPLICATION_PERSON a naplňte je daty
 
    - skript Tables\CRM_CLIENT.sql
 
